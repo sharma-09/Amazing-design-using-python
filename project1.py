@@ -1,0 +1,15 @@
+import turtle
+
+t=turtle.Turtle()
+g=turtle.Screen()
+
+g.bgcolor('black')
+t.width(4)
+t.speed(14)
+
+col=('yellow','red','blue','green')
+
+for i in range (300) :
+    t.pencolor(col[i%4])
+    t.forward(i*4)
+    t.right(138)
